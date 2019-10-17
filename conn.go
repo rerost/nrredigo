@@ -4,7 +4,7 @@ import (
 	"strings"
 
 	"github.com/gomodule/redigo/redis"
-	"github.com/newrelic/go-agent"
+	newrelic "github.com/newrelic/go-agent"
 )
 
 func wrapConn(c redis.Conn, txn newrelic.Transaction, cfg *Config) redis.Conn {
